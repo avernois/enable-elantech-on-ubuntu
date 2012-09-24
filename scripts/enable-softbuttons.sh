@@ -1,6 +1,11 @@
 #!/bin/bash
 
-device="ETPS/2 Elantech Touchpad"
+device=$1
+
+if [ -z $device ]; then
+	echo "You should give the id of device (as given by xinput)";
+	exit
+fi
 
 i=0
 while read label min delim max; do

@@ -9,12 +9,14 @@ The scripts configure Synaptics drivers to enable clickpad, middle and right cli
 scripts
 -------
 
+Both script require one parameter wich is the device identifier (id or name as given by xinput).
+
 * enable-clickpad.sh : that script tells driver that this is a clickpad (click buttons are no separated from pad). That will enable to click and drag. It should be executed before the other
 * enable-softbuttons : enable middle click and right click.
 
 usage
 -----
-Execute the scripts in your ~/.bash_profile and it should be good
+Add the scripts in your ~/.bash_profile and it should be good (do not forget the parameter :)
 
 limits
 ------
